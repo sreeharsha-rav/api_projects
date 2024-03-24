@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: travel-adventures  # Application name
+  datasource: # Data source configuration
+    url: jdbc:h2:mem:travel-adventures-db
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:  # JPA configuration
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create  # Create tables
+    show-sql: true  # Show SQL statements
+
+server:
+  port: 4001  # Server port
