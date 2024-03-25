@@ -2,7 +2,6 @@ package com.api.bootsbootique.controller;
 
 import com.api.bootsbootique.entities.Boot;
 import com.api.bootsbootique.enums.BootType;
-import com.api.bootsbootique.exceptions.NotImplementedException;
 import com.api.bootsbootique.exceptions.QueryNotSupportedException;
 import com.api.bootsbootique.repositories.BootRepository;
 import org.springframework.beans.factory.annotation.Autowired;
