@@ -12,6 +12,7 @@ A RESTful API that provides information about the Olympic teams of various count
 
 ## Features
 
+- Frontend: A simple web page that allows users to view a list of countries and their details
 - Retrieve a list of countries
 - Retrieve the details for a specific country
 - Retrieve the list of gold medal winners for a specific country
@@ -20,6 +21,10 @@ A RESTful API that provides information about the Olympic teams of various count
 ## API Endpoints
 
 - `GET /countries`: retrieve all countries
+- `GET /countries?sort_by={field}&ascending={y|n}`: retrieve all countries, sorted by the specified field in ascending or descending order
+- `GET /countries/{country}`: retrieve the details for a specific country
+- `GET /countries/{country}/medals`: retrieve the list of gold medal winners for a specific country
+- `GET /countries/{country}/medals?sort_by={field}&ascending={y|n}`: retrieve the list of gold medal winners for a specific country, sorted by the specified field in ascending or descending order
 
 ### Testing
 You can use cURL to manually test your API endpoints.
